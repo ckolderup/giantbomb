@@ -2,6 +2,7 @@ module GiantBomb
   module Api
     include HTTParty
     base_uri 'api.giantbomb.com'
+    headers 'User-Agent' => 'butwithguns_bot'
     
     def self.config
       @@config
