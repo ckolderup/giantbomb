@@ -1,6 +1,5 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "giantbomb"
+require File.expand_path("../lib/giantbomb/version", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "giantbomb"
