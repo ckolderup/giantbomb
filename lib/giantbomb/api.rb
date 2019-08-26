@@ -1,7 +1,11 @@
 module GiantBomb
   module Api
     include HTTParty
-    base_uri 'api.giantbomb.com'
+    if ENV['HTTPARTY_DEBUG']
+      debug_output $stdout
+    end
+    
+    base_uri 'giantbomb.com/api'
     headers 'User-Agent' => 'butwithguns_bot'
     
     def self.config
